@@ -24,11 +24,12 @@ class _WordHurdlePageState extends State<WordHurdlePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Word Hurdle'),
+        title: Text('Word Hurdle'), centerTitle: true,
       ),
       body: Center(
           child: Column(
             children: [
+              // wordle board
               Expanded(
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width * 0.70, // Gridview will take up 70% of the screen
@@ -46,6 +47,7 @@ class _WordHurdlePageState extends State<WordHurdlePage> {
                 ),
               ),
 
+              // keyboard
               Consumer<HurdleProvider>(
                 builder: (context, provider, child) =>
                   KeyboardView(
@@ -56,6 +58,7 @@ class _WordHurdlePageState extends State<WordHurdlePage> {
                   )
               ),
 
+              // buttons
               Padding(
                 padding: EdgeInsets.all(16),
                 child: Consumer<HurdleProvider>(

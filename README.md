@@ -1,3 +1,4 @@
-# word_hurdle
+# Word Hurdle Game
 
-Word Hurdle is a guessing game. The player gets 6 chances to guess a 5-letter word. With each guess, the player gets clues about which letters are in the hidden word and which aren't.
+It's a word-guessing game where players have 6 tries to identify a five-letter word. After each guess, red colored letters indicate which letters are not present in the target word. Players use this feedback to solve the puzzle efficiently.
+
