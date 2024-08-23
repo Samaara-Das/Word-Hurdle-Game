@@ -11,7 +11,7 @@ class WordleView extends StatelessWidget {
       alignment: Alignment.center,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: wordle.existsInTarget ? Colors.white60 :
+        color: wordle.existsInTarget ? Colors.green :
                 wordle.doesNotExistInTarget ? Colors.blueGrey.shade700 :
                 null,
         border: Border.all(
